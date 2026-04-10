@@ -33,6 +33,7 @@ body {
     radial-gradient(circle at top left, rgba(201, 45, 175, 0.15), transparent 28%),
     linear-gradient(180deg, #fbfafd 0%, #f3eff6 100%);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 img {
@@ -106,6 +107,7 @@ button {
 .brand-lockup {
   display: grid;
   gap: 0.08rem;
+  min-width: 0;
 }
 
 .brand-lockup strong {
@@ -125,6 +127,7 @@ button {
   gap: 1rem 1.25rem;
   color: var(--muted);
   font-size: 0.95rem;
+  min-width: 0;
 }
 
 .site-nav a {
@@ -308,6 +311,16 @@ button {
   gap: 2rem;
   align-items: center;
   padding: clamp(1.1rem, 4vw, 2.2rem) clamp(1.1rem, 3vw, 2.2rem) 2rem;
+}
+
+.site-header > *,
+.hero-shell > *,
+.signature-layout > *,
+.branches-editorial > *,
+.international-shell > *,
+.statement-shell > *,
+.contact-shell > * {
+  min-width: 0;
 }
 
 .hero-copy {
@@ -1370,12 +1383,14 @@ button {
   .site-nav {
     grid-column: 1 / -1;
     width: 100%;
+    max-width: 100%;
     flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 0.8rem;
     overflow-x: auto;
     font-size: 0.9rem;
     padding-bottom: 0.25rem;
+    padding-right: 0.2rem;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
   }
@@ -1471,6 +1486,7 @@ button {
   .hero-proof span {
     padding: 0.5rem 0.78rem;
     font-size: 0.88rem;
+    max-width: 100%;
   }
 
   .partner-chip {
@@ -1619,6 +1635,16 @@ button {
 
   .brand-lockup strong {
     font-size: 0.78rem;
+    max-width: 12rem;
+  }
+
+  .site-nav {
+    gap: 0.7rem;
+    font-size: 0.84rem;
+  }
+
+  .site-nav a {
+    padding-right: 0.1rem;
   }
 
   .hero {
