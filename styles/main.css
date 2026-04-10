@@ -481,6 +481,19 @@ button {
   color: var(--brand-strong);
 }
 
+.proof-value,
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proof-value svg,
+.feature-icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
 .proof-item p {
   margin-top: 0.7rem;
   color: var(--muted);
@@ -681,7 +694,7 @@ button {
   border-top: 1px solid var(--line);
 }
 
-.signature-rail span {
+.signature-rail .feature-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -949,7 +962,7 @@ button {
   border-top: 1px solid var(--line);
 }
 
-.international-list span {
+.international-list .feature-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
