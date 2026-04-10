@@ -1450,12 +1450,16 @@ button {
   .hero-shell {
     gap: 1rem;
     padding-top: 1.15rem;
-    padding-bottom: 1.1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 4.25rem;
   }
 
   .hero-copy {
     gap: 0.62rem;
     max-width: none;
+    padding-left: 0.95rem;
+    padding-right: 0.95rem;
   }
 
   .hero-logo {
@@ -1495,6 +1499,7 @@ button {
 
   .hero-proof {
     gap: 0.6rem;
+    margin-bottom: 0.85rem;
   }
 
   .hero-proof span {
@@ -1621,7 +1626,15 @@ button {
   }
 
   .hero-slider-dots {
-    bottom: 1rem;
+    left: 50%;
+    bottom: 1.1rem;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: calc(100% - 2rem);
+    padding: 0.35rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(19, 18, 23, 0.28);
+    backdrop-filter: blur(8px);
   }
 
   .proof-strip {
@@ -1667,10 +1680,15 @@ button {
   }
 
   .hero-shell {
-    padding-left: 0.95rem;
-    padding-right: 0.95rem;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 4.1rem;
+  }
+
+  .hero-copy {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
 
   .hero h1 {
