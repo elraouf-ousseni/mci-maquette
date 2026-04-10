@@ -67,7 +67,7 @@ Tu peux vendre cette base comme :
 
 ## Publication GitHub Pages
 
-Le projet est maintenant prepare pour GitHub Pages avec un workflow automatique.
+Le projet est maintenant prepare pour GitHub Pages en deploiement direct depuis la branche `main`.
 
 ### Etapes a faire
 
@@ -87,9 +87,11 @@ git push -u origin main
 
 - ouvrir `Settings`
 - aller dans `Pages`
-- dans `Source`, choisir `GitHub Actions`
+- dans `Source`, choisir `Deploy from a branch`
+- selectionner la branche `main`
+- laisser le dossier `/ (root)`
 
-Ensuite, chaque push sur `main` publiera automatiquement la maquette.
+Ensuite, GitHub Pages publiera directement le contenu de `main`.
 
 ### URL finale
 
