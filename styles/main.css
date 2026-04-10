@@ -1376,8 +1376,19 @@ button {
   }
 
   .hero {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
     border-bottom-left-radius: 1.3rem;
     border-bottom-right-radius: 1.3rem;
+  }
+
+  .hero-media,
+  .hero-overlay,
+  .hero-slider,
+  .hero-slide,
+  .hero-slide img {
+    width: 100%;
   }
 
   .section,
@@ -1676,6 +1687,9 @@ button {
   }
 
   .hero {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
     min-height: auto;
   }
 
